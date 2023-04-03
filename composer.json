@@ -1,13 +1,12 @@
 {
     "name": "preemstudio/http-status-codes",
     "description": "A package to easily work with HTTP status codes.",
+    "license": "MIT",
     "keywords": [
-        "PreemStudio",
+        "Preem Studio",
         "laravel",
         "http-status-codes"
     ],
-    "homepage": "https://github.com/preemstudio/http-status-codes",
-    "license": "MIT",
     "authors": [
         {
             "name": "Brian Faust",
@@ -15,8 +14,9 @@
             "role": "Developer"
         }
     ],
+    "homepage": "https://github.com/PreemStudio/http-status-codes",
     "require": {
-        "php": "^8.1",
+        "php": "^8.2",
         "illuminate/contracts": "^10.0",
         "preemstudio/laravel-jetpack": "^1.0"
     },
@@ -24,7 +24,6 @@
         "ergebnis/composer-normalize": "^2.2",
         "friendsofphp/php-cs-fixer": "^3.15",
         "infection/infection": "^0.26.19",
-        "laravel/pint": "^1.0",
         "nunomaduro/collision": "^6.0",
         "nunomaduro/larastan": "^2.0",
         "orchestra/testbench": "^8.0",
@@ -36,6 +35,8 @@
         "preemstudio/php-cs-fixer-config": "^1.3",
         "spatie/laravel-ray": "^1.2"
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "PreemStudio\\HttpStatusCodes\\": "src"
@@ -46,13 +47,6 @@
             "Tests\\": "tests"
         }
     },
-    "scripts": {
-        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
-        "analyse": "vendor/bin/phpstan analyse",
-        "test": "vendor/bin/pest",
-        "test-coverage": "vendor/bin/pest --coverage",
-        "format": "vendor/bin/php-cs-fixer fix"
-    },
     "config": {
         "allow-plugins": {
             "pestphp/pest-plugin": true,
@@ -62,6 +56,11 @@
         },
         "sort-packages": true
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    "scripts": {
+        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+        "analyse": "vendor/bin/phpstan analyse",
+        "format": "vendor/bin/php-cs-fixer fix",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage"
+    }
 }

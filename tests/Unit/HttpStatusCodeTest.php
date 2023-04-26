@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Tests\Unit;
 
-use InvalidArgumentException;
 use BombenProdukt\HttpStatusCodes\HttpStatusCode;
+use InvalidArgumentException;
 
 it('can get a value by name', function (): void {
     expect(HttpStatusCode::OK())->toBe(200);

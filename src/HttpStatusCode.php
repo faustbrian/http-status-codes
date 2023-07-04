@@ -223,7 +223,7 @@ enum HttpStatusCode: int
 
     public static function __callStatic(string $name, mixed $args): int
     {
-        foreach (static::cases() as $case) {
+        foreach (self::cases() as $case) {
             if ($case->name === $name) {
                 return $case->value;
             }

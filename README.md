@@ -4,20 +4,6 @@
     </a>
 </p>
 
-<p align="center">
-    <a href="https://github.com/faustbrian/http-status-codes/actions">
-        <img src="https://badge.sh/github/check-runs/BombenProdukt/http-status-codes" alt="Checks" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/http-status-codes">
-        <img src="https://badge.sh/packagist/downloads/BombenProdukt/http-status-codes" alt="Downloads" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/http-status-codes">
-        <img src="https://badge.sh/packagist/version/BombenProdukt/http-status-codes" alt="Version" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/http-status-codes">
-        <img src="https://badge.sh/packagist/license/BombenProdukt/http-status-codes" alt="License" />
-    </a>
-</p>
 
 ## About HTTP Status Codes
 

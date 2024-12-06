@@ -1,0 +1,41 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Cannot call method in\\(\\) on iterable\\<SplFileInfo\\>\\.$#"
+			count: 1
+			path: .php-cs-fixer.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\HttpStatusCodes\\\\HttpStatusCode\\:\\:names\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/HttpStatusCode.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\HttpStatusCodes\\\\HttpStatusCode\\:\\:options\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/HttpStatusCode.php
+
+		-
+			message: "#^Method BaseCodeOy\\\\HttpStatusCodes\\\\HttpStatusCode\\:\\:values\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: src/HttpStatusCode.php
+
+		-
+			message: "#^Undefined variable\\: \\$this$#"
+			count: 1
+			path: tests/Pest.php
+
+		-
+			message: "#^Call to an undefined static method BaseCodeOy\\\\HttpStatusCodes\\\\HttpStatusCode\\:\\:INVALID_CASE_NAME\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/HttpStatusCodeTest.php
+
+		-
+			message: "#^Call to an undefined static method BaseCodeOy\\\\HttpStatusCodes\\\\HttpStatusCode\\:\\:OK\\(\\)\\.$#"
+			count: 1
+			path: tests/Unit/HttpStatusCodeTest.php
+
+		-
+			message: "#^Unable to resolve the template type TValue in call to function expect$#"
+			count: 1
+			path: tests/Unit/HttpStatusCodeTest.php
